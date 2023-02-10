@@ -1,4 +1,7 @@
+import Barchart from "./Barchart";
 import React from "react";
+import Piechart from "./Piechart";
+
 
 const Dashboard=()=>{
     return(
@@ -32,7 +35,21 @@ const Dashboard=()=>{
                         <p>Expenditure</p>
                     </div>
                 </div>
+                <div className="stats">
+                    <div className="chart-con">
+                        <h1>Profit loss chart</h1>
+                        <Barchart/>
+                    </div>
+                    
+                    <div className="chart-con">
+                        <h1>Profit loss chart</h1>
+                        <Piechart/>
+                    </div>
+                    
+                </div>
+                
             </span>
+            
         </div>
     )
 }

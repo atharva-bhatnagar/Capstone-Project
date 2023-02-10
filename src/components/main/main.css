@@ -42,7 +42,7 @@ body{
     border: none;
     border-radius: 20px;
     box-shadow: 0 0 4px #b9b6b6;
-    height: 60vh;
+    min-height: 60vh;
     text-align: center;
     padding: 10px;
 }
@@ -75,5 +75,36 @@ hr{
     width: 12vw;
     height: 16vh;
     border: none;
+    border-radius: 10px;
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width:100%;
+    margin-top: 10px;
+}
+.bar-chart{
+    height: 300px;
+    width:90%;
+    background-color: #F7F7F7;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.pie-chart{
+    height: 300px;
+    width: 65%;
+    background-color: #F7F7F7;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.chart-con{
+    background-color: white;
+    box-shadow: 0 0 4px #b9b6b6;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
 }
