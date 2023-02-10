@@ -1,20 +1,41 @@
 
 import './App.css';
-import Register from './components/register/Register';
 import Login from './components/login/Login';
-import Customers from './components/main/Customers';
-import Dashboard from './components/main/Dashboard';
+
 import Main from './components/main/Main';
-import Navbar from './components/main/Navbar';
-import Transactions from './components/main/Transactions';
+
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { useState } from 'react';
+import admins from './data'
+
 
 function App() {
+
+  console.log(admins)
+  const [adminData,setAdminData]=useState(admins)
+  const [login,setLogin]=useState(false)
+
   return (
-    <div className="App">
+    
+      <Router>
+        <div className="App">
+          <Routes>
+            <Route exact path='/' element={login===true?<Main data={adminData.admins} comp='dash' setLogin={setLogin}/>:<Login data={adminData.admins} setLogin={setLogin}/>}/>
+              
+              
+           
+              
+            
+
+          </Routes>
+
+        
+        </div>
+
+      </Router>
       
       
-      <Main/>
-    </div>
+    
   );
 }
 

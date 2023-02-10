@@ -2,12 +2,16 @@ import React from "react";
 import Navbar from "./Navbar";
 import './main.css'
 import Dashboard from "./Dashboard";
+import Transactions from './Transactions'
 
-const Main=()=>{
+
+const Main=({data,setLogin})=>{
     return(
         <div className="main">
-            <Navbar/>
-            <Dashboard/>
+            <Navbar name={data.name} setLogin={setLogin}/>
+            
+            <Dashboard data={data}/>
+            
         </div>
     )
 }

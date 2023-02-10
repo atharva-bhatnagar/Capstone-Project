@@ -23,7 +23,6 @@ body{
     font-size: 1.3em;
 }
 .nav-link:hover{
-    border-bottom: 2px solid blue;
     color: blue;
 }
 .logout{
@@ -143,4 +142,8 @@ hr{
     font-weight: 600;
     border-radius: 20px;
     color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
