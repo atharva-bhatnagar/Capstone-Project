@@ -47,6 +47,24 @@ const Dashboard=()=>{
                     </div>
                     
                 </div>
+                <div className="customer-dash">
+                    <h1 className="cust-head">Customer list</h1>
+                    <div className="customer-card-head">
+                        <h3>NAME:</h3>
+                        <h3>EMAIL:</h3>
+                        <h3>TYPE:</h3>
+                    </div>
+                    <div className="customer-card">
+                        <h3>John smilga</h3>
+                        <p>johnsmilga@gmail.com</p>
+                        <p>Regular</p>
+                    </div>
+                    <div className="customer-card">
+                        <h3>John smilga</h3>
+                        <p>johnsmilga@gmail.com</p>
+                        <p>Regular</p>
+                    </div>
+                </div>
                 
             </span>
             
