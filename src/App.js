@@ -12,13 +12,8 @@ function App() {
   return (
     <div className="App">
       
-      <Customers/>
-      <Navbar/>
-      <Dashboard/>
-      <Login/>
+      
       <Main/>
-      <Transactions/>
-      <Register/>
     </div>
   );
 }
